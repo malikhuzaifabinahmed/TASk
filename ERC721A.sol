@@ -10,7 +10,7 @@ contract KaiERC721 is ERC721A, Ownable {
      constructor(
        
        ) ERC721A("KaiGen", "KaGE") {
-        _transferOwnership(msg.sender);
+        transferOwnership(msg.sender);
         }    
     function _baseURI() internal pure override returns (string memory) {
         return 'https://boredapeyachtclub.com/api/mutants/';

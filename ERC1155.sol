@@ -48,7 +48,7 @@ contract KaiERC1155 is ERC1155 ,Ownable {
 
     constructor() ERC1155("https://boredapeyachtclub.com/api/mutants/") {
         
-         _transferOwnership(msg.sender);
+         transferOwnership(msg.sender);
     }
 
 

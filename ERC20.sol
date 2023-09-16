@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract KaGEToken is ERC20, Ownable {
     constructor( ) ERC20("KaiGen", "KaGE") {
-        _transferOwnership(msg.sender); 
+        transferOwnership(msg.sender); 
     }
 
    function mint(
